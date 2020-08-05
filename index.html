@@ -1,0 +1,453 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>1号店</title>
+		<style>
+			*{
+				margin:0;
+				padding:0;
+				font-size:14px;
+			}
+			ul,li,ol{
+				list-style:none;
+				color:gray;
+			}
+			a{
+				text-decoration:none;
+			}
+			.top{
+				width:1200px;
+				height:34px;
+				background:lightgray;
+				margin:0 auto;
+			}
+			.top p{
+				float:left;
+				letter-spacing:3px;
+				line-height:34px;
+				margin-left:20px;
+			}
+			.top a{
+				text-decoration:none;
+			}
+			.topul{
+				margin-left:600px;
+			}
+			.topul li{
+				list-style:none;
+				height:14px;
+				float:left;
+				margin:10px 5px;
+				border-right:1px solid gray;
+				padding-right:5px;
+			}
+			.topul li a{
+				color:gray;
+			}
+			.topul li img{
+				vertical-align:middle;
+			}
+			.topul li:last-child a{
+				color:black;
+			}
+			.topul li:last-child{
+				border-right:none;
+			}
+			.sectop{
+				width:1040px;
+				height:128px;
+				margin:0 auto;
+				border:0px solid red;
+				position:relative;
+			}
+			.option{
+				width:60px;
+				height:24px;
+				border:2px solid red;
+				border-right:1px solid gray;
+				position:absolute;
+				left:306px;
+				top:40px;
+			}
+			.sectop input{
+				width:215px;
+				height:20px;
+				position:absolute;
+				left:366px;
+				top:40px;
+				border-top:2px solid red;
+				border-bottom:2px solid red;
+				border-left:none;
+				border-right:none;
+				padding-left:10px;
+			}
+			.sectop .sousuo{
+				width:80px;
+				height:24px;
+				background:red;
+				color:white;
+				position:absolute;
+				left:580px;
+				top:40px;
+				text-align:center;
+				line-height:24px;
+				text-decoration:none;
+			}
+			.sectop .middle{
+				margin-left:300px;
+			}
+			.sectop .middle li{
+				float:left;
+				font-size:10px;
+				margin:0 2px;
+			}
+			.bottom{
+				width:876px;
+				height:36px;
+				border:0px solid red;
+				position:absolute;
+				top:92px;
+			}
+			.bottom p{
+				display:inline-block;
+				width:155px;
+				height:29px;
+				background:#FF3C3C;
+				font-size:17px;
+				color:white;
+				padding-left:30px;
+				padding-top:7px;
+				background-image:url(img/img/nav.png);
+				background-repeat:no-repeat;
+				background-position:right center;
+			}
+			.bottom a{
+				margin-left:25px;
+				font-weight:bold;
+				font-size:15px;
+				color:gray;
+			}
+			.bottom .red{
+				color:red;
+			}
+			.container{
+				width:1040px;
+				height:400px;
+				border:0px solid red;
+				margin:0 auto;
+				font-size:0;
+			}
+			.left{
+				width:185px;
+				height:400px;
+				background:#C13030;
+				display:inline-block;
+			}
+			
+			.left li{
+				color:white;
+				font-size:13px;
+				margin-left:30px;
+				padding:8px 0;
+			}
+			.right{
+				width:253px;
+				height:398px;
+				border-top:2px solid red;
+				box-sizing:border-box;
+				float:right;
+				background:white;
+			}
+			.right img{
+				margin:10px 0 0 15px;
+			}
+			.right span{
+				color:gray;
+				margin:7px;
+			}
+			.right p{
+				color:gray;
+				margin:5px 10px;
+				font-size:10px;
+			}
+			h2 p span{
+				margin-left:10px;
+				padding-right:5px;
+				height:10px;
+				padding-bottom:6px;
+				display:inline-block;
+				border-right:1px solid gray;
+			}
+			.foot p span{
+				border-right:1px solid gray;
+				text-align:center;
+				width:60px;
+				display:inline-block;
+				margin:20px 10px;
+				font-size:10px;
+			
+			}
+		</style>
+	</head>
+	<body>
+		<div class="top">
+			<p>Hi,请
+				<a href="#">登录</a>
+				<a href="#">注册</a>
+			</p>
+			<ul class="topul">
+				<li>
+					<a href="#">我的一号店</a>
+					<img src="img/img/121212.png">
+				</li>
+				<li>
+					<a href="#">收藏夹</a>
+					<img src="img/img/121212.png">
+				</li>
+				<li>
+					<img src="img/img/131313.png">
+					<a href="#">掌上一号店</a>
+					<img src="img/img/121212.png">
+				</li>
+				<li>
+					<a href="#">客户服务</a>
+					<img src="img/img/121212.png">
+				</li>
+				<li>
+					<a href="#">网站导航</a>
+					<img src="img/img/121212.png">
+				</li>
+				<li>
+					<a href="#">关注我们</a>
+				</li>
+			</ul>
+		</div>
+		<div class="sectop">
+			<img src="img/img/logo1.png">
+			<form action="">
+				<select name="商品"id="" class="option">
+					<option value="huawei">商品</option>
+					<option value="huawei">华为</option>
+					<option value="fengmi">蜂蜜</option>
+					<option value="ximiannai">洗面奶</option>
+					<option value="suannai">酸奶</option>
+				</select>
+				<input type="text"name="搜索" placeholder="请输入关键字">
+				<a href="" class="sousuo">搜索</a>
+			</form>
+			<ul class="middle">
+				<li>华为</li>
+				<li>蜂蜜</li>
+				<li>酸奶</li>
+				<li>洗面奶</li>
+				<li>花王</li>
+				<li>购物卡</li>
+				<li>夹克</li>
+				<li>维达</li>
+				<li>外套</li>
+				<li>良品铺子</li>
+			</ul>
+			<div class="bottom">
+				<p>全部商品分类</p>
+				<a href="" class="red">首页</a>
+				<a href="" class="red">自营超市</a>
+				<a href="" class="red">1号团</a>
+				<a href="">1号商城</a>
+				<a href="">闪购</a>
+				<a href="">活色生鲜</a>
+				<a href="">医药</a>
+				<a href="">1号海购</a>
+				<a href="">智能惠</a>
+			</div>
+		</div>
+		<div style="background:#E82A1E;width:100%;height:400px;">
+			<div class="container">
+				<div class="left">
+					<ul>
+						<li>进口食品、生鲜、海购</li>
+						<li>食品、饮料、酒</li>
+						<li>母婴、玩具、童装</li>
+						<li>家具、家庭清洁、纸品</li>
+						<li>美妆、个人护理、洗护</li>
+						<li>女装、内衣、中老年</li>
+						<li>鞋靴、宝箱、腕表配饰</li>
+						<li>男装、户外、户外运动</li>
+						<li>手机、数码、电脑办公</li>
+						<li>大家电、小家电、汽车</li>
+						<li>保健滋补、医药、成人</li>
+						<li>礼品卡、页游、图书</li>
+					</ul>
+				</div>
+				<img src="img/img/banner.jpg" style="height:400px;width:600px;vertical-align:top;">
+				<div class="right">
+					<img src="img/img/1.jpg">
+					<img src="img/img/2.jpg">
+					<img src="img/img/3.jpg"><br>
+					<span>0元试用</span>
+					<span>会员俱乐部</span>
+					<span>礼品卡</span>
+					<hr>
+					<p>【社区】当红明星教你送七夕情人礼！</p>
+					<p>【社区】全球口碑姨妈巾都在这了！</p>
+					<p>【社区】v3会员 甜蜜 免费领</p>
+					<hr>
+					<div style="width:83px;height:30px;color:red;display:inline-block;text-align:center;">话费快充</div><div style="width:83px;height:30px;color:gray;display:inline-block;border:1px solid gray;text-align:center;background:lightgray;line-height:30px;">彩票</div><div style="width:83px;height:30px;color:gray;display:inline-block;border:1px solid gray;text-align:center;background:lightgray;line-height:30px;">网游卡点</div>
+					<table  cellspacing="15px">
+						<tr>
+							<td style="font-weight:bold;">手机号码：</td>
+							<td><input type="text" neme="number" style="width:120px;"></td>
+						</tr>
+						<tr>
+							<td style="font-weight:bold;">面值：</td>
+							<td>
+								<select name="money" style="width:125px;">
+									<option value="">￥10元</option>
+									<option value="">￥30元</option>
+									<option value="">￥50元</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td style="font-weight:bold;">售价：</td>
+							<td style="color:red;">￥10.14</td>
+						</tr>
+					</table>
+					<a href="" style="background:red;color:white;width:80px;height:30px;text-align:center;line-height:30px;margin-top:30px;margin-left:20px;display:inline-block;">立即充值</a>
+				</div>
+			</div>
+		</div>	
+		
+		<div style="width:100%;overflow:hidden;background:#F8F9F9;">
+			<div style="width:1040px;overflow:hidden;margin:0 auto;">
+				<h2 style="margin:0 auto;width:1040px;overflow:hidden;padding:30px 0 0 10px;border-bottom:2px solid red;">	
+					<p style="color:red;float:left;font-size:18px;">食品饮料</p>
+					<p style="color:gray;float:right;font-size:10px;">
+						<span>咖啡</span>
+						<span>休闲零食</span>
+						<span>饼干糕点</span>
+						<span>啤酒</span>
+						<span>粮米油盐</span>
+					</p>	
+				</h2>
+				<div style="width:180px;height:307px;background:white;float:left;">
+					<p style="margin:10px 10px;">饼干糕点&nbsp;&nbsp;&nbsp;休闲零食</p>
+					<p style="margin:10px 10px;">饮料果汁&nbsp;&nbsp;&nbsp;保健乳品</p>
+					<p style="margin:10px 10px;">冲饮谷物&nbsp;&nbsp;&nbsp;营养保健</p>
+					<p style="text-align:center;color:red;font-size:18px;">banner</p>
+					<p style="text-align:center;color:gray;font-size:14px;">banner</p>
+					<img src="img/img/sec1.jpg" width="180px;">
+				</div>
+				<div style="width:280px;height:307px;background-color:white;float:left;">
+					<img src="img/img/sec1-1.jpg" width="280px" height="307px;">
+				</div>
+				<div style="width:190px;height:307px;background-color:white;float:left;">
+					<p style="text-align:center;font-size:15px;margin-top:15px;">吃货天堂</p>
+					<p style="text-align:center;color:gray;font-size:10px;">满49减10</p>
+					<img src="img/img/sec1-2.jpg">
+					<p style="text-align:center;font-size:15px;margin-top:0px;">一号酒窖</p>
+					<p style="text-align:center;color:gray;font-size:10px;">百威哈啤两件七折</p>
+					<img src="img/img/sec1-3.jpg">
+				</div>
+				<div style="width:190px;height:307px;background-color:white;float:left;">
+					<p style="text-align:center;font-size:15px;margin-top:20px;">夏季美食嘉年华</p>
+					<p style="text-align:center;color:gray;font-size:10px;">油粮一元抢：爆款五折起</p>
+					<img src="img/img/sec1-4.jpg">
+				</div>
+				<div style="width:190px;height:307px;background-color:white;float:left;">
+					<p style="text-align:center;font-size:15px;margin-top:15px;">饮料饮品</p>
+					<P style="text-align:center;color:gray;font-size:10px;margin-bottom:8px;">爆款满99减25</P>
+					<img src="img/img/sec1-5.jpg">
+					<p style="text-align:center;font-size:15px;margin-top:0px;">甜蜜蜜七夕豪礼</p>
+					<P style="text-align:center;color:gray;font-size:10px;margin-bottom:8px;">精品燕窝买一送一</P>
+					<img src="img/img/sec1-6.jpg">
+				</div>
+			</div>	
+		</div>
+		<h2 style="margin:0 auto;width:1040px;overflow:hidden;padding:30px 0 0 10px;border-bottom:2px solid green;">	
+			<p style="color:green;float:left;font-size:18px;">个护厨卫</p>
+			<p style="color:gray;float:right;font-size:10px;">
+				<span>面部防嗮</span>
+				<span>沐浴清洁</span>
+				<span>洗衣液</span>
+				<span>纸巾</span>
+				<span>驱蚊神器</span>
+			</p>	
+		</h2>
+		<div style="width:100%;overflow:hidden;background:#F8F9F9;">
+			<div style="width:1040px;overflow:hidden;margin:0 auto;">
+				<div style="width:180px;height:307px;background:white;float:left;">
+					<p style="margin:10px 10px;">洗发护发&nbsp;&nbsp;&nbsp;脱毛膏贴</p>
+					<p style="margin:10px 10px;">牙膏牙刷&nbsp;&nbsp;&nbsp;抽纸</p>
+					<p style="margin:10px 10px;">消毒液&nbsp;&nbsp;&nbsp;保鲜膜</p>
+					<p style="text-align:center;color:green;font-size:18px;margin-bottom:10px;">蓝月亮洁净盛典</p>
+					<p style="text-align:center;color:gray;font-size:14px;margin-bottom:30px;">热销商品五折起</p>
+					<img src="img/img/sec1-10.jpg" width="180px;">
+				</div>
+				<div style="width:280px;height:307px;background-color:white;float:left;">
+					<img src="img/img/sec1-8.jpg" width="280px" height="307px;">
+				</div>
+				<div style="width:190px;height:307px;background-color:white;float:left;">
+					<p style="text-align:center;font-size:15px;margin-top:5px;">自营纸品品牌团</p>
+					<p style="text-align:center;color:gray;font-size:10px;">团购疯抢中</p>
+					<img src="img/img/sec1-9.jpg">
+					<p style="text-align:center;font-size:15px;margin-top:0px;">自营衣物洗护团</p>
+					<p style="text-align:center;color:gray;font-size:10px;">爆款5折起</p>
+					<img src="img/img/sec1-7.jpg" height="116px">
+				</div>
+				<div style="width:190px;height:307px;background-color:white;float:left;">
+					<p style="text-align:center;font-size:15px;margin-top:10px;">自营美容护理</p>
+					<p style="text-align:center;color:gray;font-size:5px;">8.18爆款一贵就赔</p>
+					<img src="img/img/sec1-11.jpg" height="244px;">
+				</div>
+				<div style="width:190px;height:307px;background-color:white;float:left;">
+					<p style="text-align:center;font-size:15px;margin-top:5px;">自营口腔护理</p>
+					<P style="text-align:center;color:gray;font-size:10px;margin-bottom:0px;">更多商品第二件两折</P>
+					<img src="img/img/sec1-12.jpg">
+					<p style="text-align:center;font-size:15px;margin-top:0px;">自营洗发护发</p>
+					<P style="text-align:center;color:gray;font-size:10px;margin-bottom:0px;">更多商品第二件两折</P>
+					<img src="img/img/sec1-13.jpg">
+				</div>
+				<div style="width:180px;float:left;background:white;">
+					<p style="text-align:center;font-size:15px;margin-top:20px;">飘尼满99减25</p>
+					<p style="text-align:center;color:gray;font-size:10px;">与你最浪漫的七夕</p>
+					<img src="img/img/sec1-17.jpg" width="180px">
+				</div>
+				<div style="width:280px;float:left;background:white;height:161px;">
+					<div style="width:136px;height:62px;border:0px solid red;float:left;margin-top:40px;">
+						<p style="font-size:15px;margin-top:10px;">逼格生活由我打造</p>
+						<p style="color:gray;font-size:10px;">新品上市</p>
+						<p style="background:red;color:white;padding:2px 3px;text-align:center;">品质生活轻松家务</p>
+					</div>	
+					<img src="img/img/sec1-16.jpg" style="float:right;">
+				</div>
+				<div style="width:190px;height:161px;float:left;background:white;">
+					<p style="font-size:15px;text-align:center;">自营家庭清洁品牌团</p>
+					<p style="color:gray;font-size:10px;text-align:center;">爆款团购2.3折起</p>
+					<img src="img/img/sec1-15.jpg">
+				</div>
+				<div style="width:190px;height:161px;float:left;background:white;">
+					<p style="font-size:15px;text-align:center;">自营女性护理</p>
+					<p style="color:gray;font-size:10px;text-align:center;">更多商品第二季2折</p>
+					<img src="img/img/sec1-14.jpg">
+				</div>
+			</div>	
+			<div class="foot" style="width:1040px;margin:60px auto;background:white;color:gray;">
+				<p>
+					<span>关于一号店</span>
+					<span>网站联盟</span>
+					<span>热门搜索</span>
+					<span>友情链接</span>
+					<span>征程英才</span>
+					<span>商家登录</span>
+					<span>供应商登录</span>
+					<span>放心收</span>
+					<span>一号店新品</span>
+					<span>一号店社区</span>
+					<span>我们的团队</span>
+					<span>开放平台</span>
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
